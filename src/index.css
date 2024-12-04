@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body{
+    @apply min-h-screen grid place-items-center font-mono tracking-wider px-4;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+
+  .theme-dark{
+    @apply bg-[#222] text-slate-500 text-opacity-65;
+  }
+
+  .theme-light{
+    @apply bg-white text-[#9E9E9E] text-opacity-65;
+  }
+
+  .theme-blue{
+    @apply bg-[#011628] text-[#547998];
+  }
+}
+
+.theme-options{
+  display: flex;
+  gap: 10px;
+}
+
+.theme-option{
+  height: 25px;
+  width: 25px;
+  border: 1px solid;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#theme-light{
+  background-color: #fff;
+  border-color: #000;
+}
+
+#theme-dark{
+  background-color: #000;
+  border-color: #ddd;
+}
+
+#theme-blue{
+  background-color: #011628;
+  border-color: #011628;
+}
